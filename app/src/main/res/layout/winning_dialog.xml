@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/winnerbanner"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView"
+
+        />
+    <Button
+        android:id="@+id/winner"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:background="@drawable/oval"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:text="Click To Continue"/>
+
+    <TextView
+        android:id="@+id/textViewTopScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="93dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewTopScore"
+        android:layout_alignStart="@+id/textViewTopScore"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Top Score" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewTopScore"
+        android:layout_alignEnd="@+id/imageView"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:text="00" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignEnd="@+id/textViewScore"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Your Score" />
+
+
+</RelativeLayout>
