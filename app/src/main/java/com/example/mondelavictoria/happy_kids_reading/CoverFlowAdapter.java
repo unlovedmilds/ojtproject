@@ -126,12 +126,28 @@ public class CoverFlowAdapter extends BaseAdapter {
                     CoverFlow.mediaPlayer1.pause();
                     activity.startActivity(intent);
 
-                }else {
+                }else if(position == 8) {
                     Intent intent = new Intent(activity, Mathino_Kids.class);
                     CoverFlow.mediaPlayer1.pause();
                     activity.startActivity(intent);
 
+                }else if(position == 9) {
+                    Intent intent = new Intent(activity, ShapeGame.class);
+                    CoverFlow.mediaPlayer1.pause();
+                    activity.startActivity(intent);
+
+                }else if(position == 10) {
+                    Intent intent = new Intent(activity, SodukoGame.class);
+                    CoverFlow.mediaPlayer1.pause();
+                    activity.startActivity(intent);
+
+                }else {
+                    Intent intent = new Intent(activity, SodukoPuzzle.class);
+                    CoverFlow.mediaPlayer1.pause();
+                    activity.startActivity(intent);
+
                 }
+
             }
 
         };

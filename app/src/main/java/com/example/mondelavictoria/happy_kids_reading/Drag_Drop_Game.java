@@ -25,6 +25,7 @@ public class Drag_Drop_Game extends AppCompatActivity {
     float x,y;
     int dragEvent;
     int id = 1;
+    List<Button> buttons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +80,7 @@ public class Drag_Drop_Game extends AppCompatActivity {
         btn3.setLayoutParams(params3);
         btn4.setLayoutParams(params4);*/
 
-        List<Button> buttons = new ArrayList<Button>();
+        buttons = new ArrayList<Button>();
        buttons.add((Button)findViewById(R.id.btn1));
         buttons.add((Button)findViewById(R.id.btn2));
         buttons.add((Button)findViewById(R.id.btn3));
@@ -182,13 +183,15 @@ public class Drag_Drop_Game extends AppCompatActivity {
                     break;
                 case DragEvent.ACTION_DROP:
 
+
                     if(view.getId() == R.id.btn1 && v.getId() == R.id.target1 ){
 
-                        LinearLayout oldparent = (LinearLayout)view.getParent();
-                        oldparent.removeView(view);
-                        LinearLayout newparent = (LinearLayout)v;
+                        target1 = (LinearLayout)view.getParent();
+                        target1.removeView(view);
+                        btnTarget = (LinearLayout)v;
                         test1.setVisibility(View.GONE);
-                        newparent.addView(view);
+                        btnTarget.addView(view);
+
 
                     }else if(view.getId() == R.id.btn2 && v.getId() == R.id.target2){
                         LinearLayout oldparent = (LinearLayout)view.getParent();

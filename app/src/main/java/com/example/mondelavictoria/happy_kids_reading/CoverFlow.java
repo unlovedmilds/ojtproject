@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -76,7 +75,7 @@ public class CoverFlow extends AppCompatActivity {
             }
         });
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+       /* imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(count == 0) {
@@ -92,7 +91,7 @@ public class CoverFlow extends AppCompatActivity {
                     count = 0;
                 }
             }
-        });
+        });*/
     }
 
     private FeatureCoverFlow.OnScrollPositionListener onScrollListener() {
@@ -123,6 +122,9 @@ public class CoverFlow extends AppCompatActivity {
         games.add(new Game(R.drawable.dragdrops, "Drag and Drop"));
         games.add(new Game(R.drawable.alpha, "Word Save"));
         games.add(new Game(R.drawable.mathinokids, "Mathino Kids"));
+        games.add(new Game(R.drawable.shapelogo, "Shape Game"));
+        games.add(new Game(R.mipmap.ic_launcher_round, "Sudoko Game"));
+        games.add(new Game(R.mipmap.ic_launcher_round, "Sudoko Puzzle"));
         /*games.add(new Game(R.mipmap.ic_launcher_round, "Swipe Word"));
         games.add(new Game(R.mipmap.ic_launcher_round, "The Witcher 3"));
         games.add(new Game(R.mipmap.ic_launcher, "Tom raider 3"));
@@ -176,12 +178,14 @@ public class CoverFlow extends AppCompatActivity {
 
         if(off == false) {
             try {
+
                 mediaPlayer1.pause();
                 off = true;
             } catch (Exception e) {
 
             }
         }else {
+
             mediaPlayer1.start();
             off = false;
         }

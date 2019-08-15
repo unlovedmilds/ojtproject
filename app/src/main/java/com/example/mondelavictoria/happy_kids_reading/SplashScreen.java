@@ -36,7 +36,7 @@ public class SplashScreen extends AppCompatActivity {
         imageView.startAnimation(animation);
         textViewTyper.startAnimation(animation);
 
-        textViewTyper.animateText("LEARNING KIDS CLUB");
+        textViewTyper.animateText("Learning Skills");
         mediaPlayer.start();
         final Intent intent = new Intent(this,CoverFlow.class);
         Thread timer = new Thread(){

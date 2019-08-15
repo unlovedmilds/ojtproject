@@ -31,7 +31,10 @@
         <activity android:name=".Drag_Drop_Game" />
         <activity android:name=".Word_Save" />
         <activity android:name=".Mathino_Kids" />
-        <activity android:name=".SwipeWord"></activity>
+        <activity android:name=".SwipeWord" />
+        <activity android:name=".ShapeGame" />
+        <activity android:name=".SodukoGame" />
+        <activity android:name=".SodukoPuzzle"></activity>
     </application>
 
 </manifest>
